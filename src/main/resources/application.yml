@@ -1,0 +1,15 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: project2
+node1-url: ${NODE1_URL:http://localhost:8081/api/save}
+node2-url: ${NODE2_URL:http://localhost:8082/api/save}
+node3-url: ${NODE3_URL:http://localhost:8083/api/save}
+logging:
+  level:
+    tr.alid: INFO
+  file:
+    name: logs/project2.log
+file:
+  output-path: ${OUTPUT_PATH:D:\output2.txt}
